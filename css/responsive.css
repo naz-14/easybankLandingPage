@@ -1,0 +1,140 @@
+.nav {
+  display: block;
+  width: 100%;
+}
+.nav-link {
+  width: 100%;
+}
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .site-header {
+    padding: 1em;
+  }
+}
+@media (min-width: 992px) {
+  .site-header {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  .nav {
+    padding: 0;
+  }
+  .hero {
+    background-image: url(../img/bg-intro-desktop.svg);
+    height: 800px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top -260px right -400px;
+    display: flex;
+  }
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-text-container {
+    grid-column: 1/2;
+    align-self: center;
+  }
+  .hero-subtittle {
+    margin: 0;
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+  }
+  .hero-txt {
+    font-size: 1em;
+    margin: 0;
+    margin-bottom: 2em;
+  }
+  .hero-img-container {
+    margin: 0;
+    position: absolute;
+    background-image: none;
+    right: 0;
+    overflow: hidden;
+  }
+  .hero-img-container img {
+    width: 80%;
+    transform: translate(50%, -13%);
+  }
+  .site-main {
+    margin-top: -10%;
+    margin-bottom: 4em;
+    padding-top: 8%;
+  }
+  .site-main .subtittle {
+    margin: 0;
+  }
+  .main-description {
+    width: 50%;
+    margin: 0;
+    margin-bottom: 4em;
+  }
+  .site-main .card-img-top {
+    margin-bottom: 1em;
+  }
+  .card-body {
+    padding: 0;
+  }
+  .site-main .card-tittle {
+    margin-bottom: 1em;
+  }
+  .articles .subtittle {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  .site-footer .container {
+    display: grid !important;
+    grid-template-columns: 3fr 6fr 3fr;
+    grid-column-gap: 2em;
+  }
+  .social {
+    grid-column: 1/2;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .logo-footer {
+    margin: 0;
+  }
+  .logo-footer img {
+    width: 100%;
+  }
+  .social-icons {
+    margin: 0;
+    width: 90%;
+  }
+  .navs-container {
+    grid-column: 2/3;
+    display: flex;
+    margin: 0;
+  }
+  .site-footer .navs-container a {
+    text-align: left;
+  }
+  .rights {
+    grid-column: 3/4;
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    background-size: 85%;
+    background-position: top -260px right -400px;
+  }
+  .hero-img-container img {
+    width: 100%;
+    transform: translate(17%, -13%);
+  }
+}
+@media (min-width: 1500px) {
+  .hero {
+    background-size: 65%;
+  }
+  .hero-img-container {
+    right: 5%;
+  }
+  .hero-img-container img {
+    transform: translate(0, -13%);
+  }
+}
