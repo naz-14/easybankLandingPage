@@ -21,6 +21,24 @@
   .nav {
     padding: 0;
   }
+  #principal-nav {
+    position: relative;
+    background-color: none;
+    width: 100%;
+    top: auto;
+    left: auto;
+    right: auto;
+    border-radius: none;
+    padding: 0;
+  }
+  #principal-nav .nav-link {
+    color: hsl(233, 8%, 62%);
+    transition: color 0.5s ease-in-out;
+    font-weight: 700;
+  }
+  #principal-nav .nav-link:hover {
+    color: hsl(233, 26%, 24%);
+  }
   .hero {
     background-image: url(../img/bg-intro-desktop.svg);
     height: 800px;

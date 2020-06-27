@@ -66,16 +66,36 @@ h3 {
 .hamburguer i {
   font-size: 2em;
 }
+.navBrackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.4009978991596639) 0%,
+    rgba(0, 0, 0, 0.6026785714285714) 100%
+  );
+  z-index: 1020;
+}
 .nav {
   padding-top: 1em;
 }
-.nav-link {
-  color: var(--grayishBlue);
-  font-weight: bold;
-  transition: color 0.5s ease-in-out;
+#principal-nav {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 80%;
+  border-radius: 10px;
+  padding: 1.5em 0;
 }
-.nav-link:hover {
+#principal-nav .nav-link {
   color: var(--darkBlue);
+  font-weight: 300;
 }
 
 .hero-img-container {

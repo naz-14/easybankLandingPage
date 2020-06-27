@@ -32,6 +32,7 @@
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
+    <div class="navBrackground d-fixed collapse multi-collapse" id="backgroundPrincipal"></div>
     <header class="fixed-top site-header">
       <div class="container">
         <div
@@ -41,19 +42,20 @@
             <img src="img/logo.svg" alt="Logo" />
           </div>
           <div class="btn-container col-4 text-right d-lg-none">
-            <a
+            <button
               class="btn hamburguer"
+              type="button"
               data-toggle="collapse"
-              href="#principal-nav"
-              role="button"
+              data-target= ".multi-collapse"
               aria-expanded="false"
-              aria-controls="principal-nav"
+              aria-controls="principal-nav navBrackground"
+              id="hamburguer-btn"
             >
               <i class="fas fa-bars"></i>
-            </a>
+            </button>
           </div>
           <nav
-            class="nav collapse d-lg-flex col-lg-6 justify-content-lg-center"
+            class="nav collapse multi-collapse d-lg-flex col-lg-6 justify-content-lg-center"
             id="principal-nav"
           >
             <li class="nav-item text-center">
@@ -252,7 +254,7 @@
       <div class="container d-flex flex-column align-items-center">
         <div class="social d-flex flex-column align-items-center">
           <div class="logo-footer">
-            <img src="img/logo.svg" alt="">
+            <img src="img/logo-white.svg" alt="">
           </div>
           <div class="social-icons">
             <li class="social-icon d-inline-block"><a href="#"><i class="fab fa-facebook"></i></a></li>
